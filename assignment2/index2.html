@@ -1,0 +1,62 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+	let myPenguin={
+		
+
+			name:'Whiteblack',
+			origin:'Whiteblack the Penguin Sees the World',
+			author:'H.A. Rey and Margret Rey',
+			canfly:'false',
+			chirp:'chirp',
+			
+			details:function(){
+				return `Hello i am a penguin and my name is  [NAME HERE.] `;
+			
+              }}
+			console.log(myPenguin.details());
+           
+           myPenguin.chirp=function(){;
+				return `CHIRP!CHIRP! is this what penguins sound like?   `;
+           }
+           
+				
+			console.log(myPenguin.chirp());
+
+
+			myPenguin.sayHello=function(){;
+				return `Hello i am a penguin and my name is  ${this.name} `;
+           }
+           
+				
+			console.log(myPenguin.sayHello());
+
+			myPenguin.name=`Penguin McPenguinFace`,
+				myPenguin.sayHello=function(){;
+				return `Hello i am a penguin and my name is  ${this.name} `;
+			}
+			console.log(myPenguin.sayHello());
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+
+
+	let person={
+
+		name:'Stephanie',
+		age:18,
+		school:'cytonn',
+		gender:'female',
+		details:function(){
+
+
+			return`${this.name} is a ${this.gender} who studies at ${this.school} and is ${this.age} years old.`;
+		}
+
+	};
+
+		console.log(person.details())
+
+
+
+		let car={};
+			car.model='Range Rover';
+
+		let van=car;
+		van.model='jeep';
+
+
+
+		console.log(van.model,'van')
+		console.log(car.model,'car');
+
+		//CONSTRUCTOR
+
+		function country(name,population,leader,language){
+
+			this.name=name;
+			this.population=population;
+			this.leader=leader;
+			this.language=language;
+			
+
+		};
+
+
+		let country1=new country('Kenya','50,000,000','President','Kiswahili');
+		let country2=new country('Uganda','30,000,000','President','Luganda');
+
+
+
+		console.log('country1:',country1.name)
+		console.log('country2:',country2.name)
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
