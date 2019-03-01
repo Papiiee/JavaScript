@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5</title>
+</head>
+<body>
+<form action="">
+    <label> FirstName
+        <input type="text" id="name" onkeyup="validateName()">
+    </label>
+    <br/><br/><br/>
+     <label>LastName
+        <input type="text" id="name" onkeyup="validateName()">
+    </label>
+    <br/><br/><br/>
+     <label>Email
+        <input type="text" id="email" onkeyup="validateEmail()">
+    </label>
+    <br/><br/><br/>
+     <label>Phone
+        <input type="number" id="phone" onkeyup="validatePhone()">
+    </label>
+    <br/><br/><br/>
+    <label>Password
+        <input type="text" id="password" onkeyup="validatePassword()">
+    </label>
+    <br/><br/><br/>
+    <label>ConfirmPassword
+        <input type="text" id="confirm" onkeyup="validateConfirmPassword()">
+    </label>
+    <br/><br/><br/>
+    <p id="message"></p>
+    <br/><br/><br/>
+    <button type="button" id="login" disabled>
+        Login
+    </button>
+</form>
+
+<script>
+    function validateName() {
+        let FirstName = document.getElementById('name'),
+            LastName = document.getElementById('name'),
+        }
+         
+    function validateEmail() {
+        let Email = document.getElementById('email'),
+    }
+     
+    function validatePhone() {
+        let Phone = document.getElementById('phone'),
+    }
+     
+    function validatePassword() {
+        let Password = document.getElementById('password'),
+    }
+
+    function validateConfirmPassword() {
+
+        let ConfirmPassword = document.getElementById('confirm'),
+
+    }
+             message = document.getElementById('message'),
+            loginbutton = document.getElementById('login');
+        name.style.outline = 'none';
+        if (FirstName.value.length > 3 && LastName.value.length > 3 && Email.value.length > 6 && Phone.value =10 Password.value.length > 6 && Password.value.case =uppercase Password.value =text and number  ConfirmPassword.value =Password) {
+            name.style.border = '1px solid green';
+            email.style.border = '1px solid green';
+            password.style.border = '1px solid green';
+            message.style.color = 'green';
+            message.innerText = 'Login Successful!';
+        } else {
+            name.style.border = '1px solid red';
+            email.style.border = '1px solid red';
+            password.style.border = '1px solid red';
+            message.style.color = 'red';
+            message.innerText = 'Invalid!';
+            loginbutton.setAttribute('disabled');
+        }
+    
+</script>
+</body>
+</html>

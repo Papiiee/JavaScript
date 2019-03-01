@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Calculation of Volume</title>
 </head>
 <body>
 	<form>
 		<h>Input radius value and get volume of a sphere</h>
 		<br/>
     <label for="radius">radius
-        <input type="text" id="radius">
+        <input type="number" id="radius" value="0.00">
     </label>
     <br>
     <br>
     <label for="volume">volume
-        <input type="text" id="volume">
+        <input type="number" id="volume" value="0.00">
     </label>
     <br>
     <br>
-    <button onclick="showDetails()">Calculate</button>
+    <button onclick="calculateVolume()">Calculate</button>
  
 </form>
 	<script>
-	        function volume(num){
-					console.log(1.33*3.14*num*num*num);
+	        function calculateVolume(){
+			let radius= parseInt(document.getElementById('radius');
+			let volume=(4/3)*(22/7)*Math.pow(radius,3);
+			document.getElementById('volume').value=volume
+
+
 				}
-		
-				volume();
-				
 			
 	</script>
 	</body>
